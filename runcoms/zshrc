@@ -13,6 +13,12 @@ fi
 PATH=/usr/local/bin:/usr/local/sbin:/usr/local/lib/node_modules/moxie-phonegap/node_modules/.bin:$PATH
 export PATH
 
+alias l='ls -lah'
+alias g='git'
+alias v='vim'
+alias p="cd ~/Documents/Projects/"
+alias m='mate'
+
 if [[ -s "/usr/local/share/python/virtualenvwrapper.sh" ]]; then
     source /usr/local/share/python/virtualenvwrapper.sh
 fi
