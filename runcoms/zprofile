@@ -5,6 +5,16 @@
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
 #
 
+# Applications specific
+
+export MOXIE_SETTINGS=~/Documents/Projects/moxie/moxie/local_settings.yaml
+export MOXIE_CELERYCONFIG=~/Documents/Projects/moxie/moxie/local_celeryconfig.yaml
+export WORKON_HOME=$HOME/.virtualenvs
+export JAVA_HOME=$(/usr/libexec/java_home)
+export DOCKER_HOST=tcp://$(boot2docker ip 2>/dev/null):2376
+export DOCKER_CERT_PATH=~/.boot2docker/certs/boot2docker-vm
+export DOCKER_TLS_VERIFY=1
+
 #
 # Browser
 #
@@ -17,8 +27,8 @@ fi
 # Editors
 #
 
-export EDITOR='nano'
-export VISUAL='nano'
+export EDITOR='vim'
+export VISUAL='vim'
 export PAGER='less'
 
 #
