@@ -18,6 +18,7 @@ alias g='git'
 alias v='vim'
 alias p="cd ~/Documents/Projects/"
 alias m='mate'
+alias clean_pyc='find . -name \*.pyc -delete'
 
 if [[ -s "/usr/local/share/python/virtualenvwrapper.sh" ]]; then
     source /usr/local/share/python/virtualenvwrapper.sh
