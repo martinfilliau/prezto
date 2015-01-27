@@ -24,6 +24,10 @@ if [[ -s "/usr/local/share/python/virtualenvwrapper.sh" ]]; then
     source /usr/local/share/python/virtualenvwrapper.sh
 fi
 
+if [[ -s "/usr/local/opt/autoenv/activate.sh" ]]; then
+    source /usr/local/opt/autoenv/activate.sh
+fi
+
 zstyle -e ':completion:*:hosts' hosts 'reply=(
     ${=${${${${(@M)${(f)"$(cat ~/.ssh/config 2>/dev/null)"}:#Host *}#Host }:#*\**}:#*\?*}}
 )'
