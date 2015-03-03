@@ -7,8 +7,6 @@
 
 # Applications specific
 
-export MOXIE_SETTINGS=~/Documents/Projects/moxie/moxie/local_settings.yaml
-export MOXIE_CELERYCONFIG=~/Documents/Projects/moxie/moxie/local_celeryconfig.yaml
 export WORKON_HOME=$HOME/.virtualenvs
 export JAVA_HOME=$(/usr/libexec/java_home)
 export DOCKER_HOST=tcp://$(boot2docker ip 2>/dev/null):2376
