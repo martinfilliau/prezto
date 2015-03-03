@@ -10,7 +10,7 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
-PATH=/usr/local/bin:/usr/local/sbin:/usr/local/lib/node_modules/moxie-phonegap/node_modules/.bin:$PATH
+PATH=/usr/local/bin:/usr/local/sbin:$PATH
 export PATH
 
 alias l='ls -lah'
