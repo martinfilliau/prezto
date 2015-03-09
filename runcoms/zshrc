@@ -19,6 +19,7 @@ alias v='vim'
 alias p="cd ~/Documents/Projects/"
 alias m='mate'
 alias clean_pyc='find . -name \*.pyc -delete'
+alias clean_orig='find . -name \*.orig -delete'
 
 if [[ -s "/usr/local/share/python/virtualenvwrapper.sh" ]]; then
     source /usr/local/share/python/virtualenvwrapper.sh
