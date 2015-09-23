@@ -35,6 +35,11 @@ if [[ -s "/usr/local/opt/autoenv/activate.sh" ]]; then
     source /usr/local/opt/autoenv/activate.sh
 fi
 
+# sourcing autoenv when pip installing it on ubuntu...
+if [[ -s "/usr/local/bin/activate.sh" ]]; then
+    source /usr/local/bin/activate.sh
+fi
+
 zstyle -e ':completion:*:hosts' hosts 'reply=(
     ${=${${${${(@M)${(f)"$(cat ~/.ssh/config 2>/dev/null)"}:#Host *}#Host }:#*\**}:#*\?*}}
 )'
