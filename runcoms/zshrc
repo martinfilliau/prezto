@@ -16,12 +16,17 @@ export PATH
 
 alias l='ls -lah'
 alias g='git'
-alias v='vim'
 alias p="cd ~/Documents/Projects/"
 alias m='mate'
 alias clean_pyc='find . -name \*.pyc -delete'
 alias clean_orig='find . -name \*.orig -delete'
 alias clean_tilde='find . -name \*~ -delete'
+
+if hash nvim 2>/dev/null; then
+	alias v='nvim'
+else
+	alias v='vim'
+fi
 
 if [[ -s "/usr/local/share/python/virtualenvwrapper.sh" ]]; then
     source /usr/local/share/python/virtualenvwrapper.sh
