@@ -19,7 +19,9 @@ if [[ "$OSTYPE" == darwin* ]]; then
   if (( $+commands[docker-machine] )) ; then
     eval $(docker-machine env dev)
   fi
-  export JAVA_HOME=$(/usr/libexec/java_home)
+  if [[ -d "/usr/libexec/java_home" ]] ; then
+    export JAVA_HOME=$(/usr/libexec/java_home)
+  fi
 fi
 
 #
