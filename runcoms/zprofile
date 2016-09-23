@@ -16,7 +16,9 @@ export PYTHONPATH=/usr/local/lib/python2.7/site-packages/
 
 if [[ "$OSTYPE" == darwin* ]]; then
   export BROWSER='open'
-  eval $(docker-machine env dev)
+  if (( $+commands[docker-machine] )) ; then
+    eval $(docker-machine env dev)
+  fi
   export JAVA_HOME=$(/usr/libexec/java_home)
 fi
 
